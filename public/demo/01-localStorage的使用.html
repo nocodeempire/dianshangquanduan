@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<script>
+
+  //如何往localStorage中存储数据。
+  //参数1：key 键
+  //参数2：value 对应的值
+  //localStorage.setItem("name", "zs");
+
+
+  //把整个搜索历史记录就存储在一个key当中。
+  //把搜索的历史记录存储到一个数组中， lt_search_history
+
+
+
+
+  //localStorage中不能存储复杂类型的，  只能存储简单类型。
+
+  //localStorage存储数据的时候，如果是复杂类型，需要把复杂类型转换成json格式的字符串。
+
+  //需求：把arr这个数组存储到localStorage中，key的名字：lt_search_history
+  var arr = ["阿迪达斯", "耐克", "李宁"];
+  var obj = {
+    name:"zs",
+    age:18
+  }
+
+  //ify:化   simple:简单  simplify:简单化
+  localStorage.setItem("lt_search_history", JSON.stringify(obj));
+
+
+  //结论：
+    //使用localStorage存储复杂类型的思路：
+    //1. 把复杂类型转换成json字符串
+    //2. 把json字符串存储起来
+
+    //3. 先把json字符串获取出来
+    //4. 把json字符串再转换成复杂类型。
+
+
+</script>
+
+</body>
+</html>

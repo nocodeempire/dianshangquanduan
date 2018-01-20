@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<script>
+
+  //slice: 截取
+  //var arr = ["张飞","赵云","刘备","关羽","黄忠", "马超"];
+  //var newArray = arr.slice(2,4);
+  //console.log(newArray);
+  //console.log(arr);
+
+
+  //splice()
+  //参数1： start:开始位置
+  //参数2：deletecount:删除的个数
+  //参数3：在删除位置，添加的元素
+
+  //原数组发生改变
+  var arr = ["张飞", "赵云", "刘备", "关羽", "黄忠", "马超"];
+  arr.splice(1, 0, "诸葛亮", "曹操");
+  console.log(arr);
+
+
+</script>
+
+</body>
+</html>
